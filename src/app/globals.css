@@ -19,3 +19,52 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes swing {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes wobble {
+  0% { transform: translateX(0%) rotate(0deg); }
+  25% { transform: translateX(-5px) rotate(-3deg); }
+  50% { transform: translateX(5px) rotate(3deg); }
+  75% { transform: translateX(-3px) rotate(-1deg); }
+  100% { transform: translateX(0%) rotate(0deg); }
+}
+
+.animate-swing {
+  animation: swing 1.5s ease-in-out infinite;
+}
+
+.animate-wobble {
+  animation: wobble 0.5s ease-in-out infinite;
+}
+
+.hover-scale:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s ease-in-out;
+}
+.piece {
+  transform: scale(2) ; /* Ban đầu to hơn & nghiêng */
+  opacity: 0;
+}
+
+.drop {
+  animation: dropAnim 0.4s ease-out forwards; 
+}
+
+@keyframes dropAnim {
+  0% {
+     transform: scale(5) ;
+     opacity: 0;
+  }
+  100% {
+     transform: scale(1) rotateX(0deg);
+     opacity: 1;
+  }
+}
+
+

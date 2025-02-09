@@ -10,7 +10,7 @@ type BoardProps = {
 };
 
 const Board: React.FC<BoardProps> = ({ squares, onClick, isXNext = true, isWinners = false }) => {
-   const handleClick = (index: any) => {
+   const handleClick = (index: number) => {
       if (isWinners) return;
       onClick(index);
    };

@@ -140,9 +140,9 @@ const Game: React.FC = () => {
         </div>
       )}
       <div className="flex flex-row justify-between w-auto gap-3 md:w-[290px]">
-        <CustomButton onClick={handleUndo} iconSrc="/Undo.svg" className=" relative p-2" borderColor={"border-black"} />
-        <CustomButton children={"Restart"} onClick={resetGame} borderColor={"border-black"} textColor="text-black" className="relative p-2" />
-        <CustomButton children={"Reset Score"} onClick={resetScore} borderColor={"border-black"} textColor="text-black" className="relative p-2" />
+        <CustomButton onClick={handleUndo} iconSrc="/Undo.svg" className=" relative p-2" borderColor={"border-black"} ></CustomButton>
+        <CustomButton onClick={resetGame} borderColor={"border-black"} textColor="text-black" className="relative p-2" >Restart</CustomButton>
+        <CustomButton onClick={resetScore} borderColor={"border-black"} textColor="text-black" className="relative p-2" >Reset Score</CustomButton>ss
       </div>
     </div >
   );

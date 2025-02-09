@@ -5,7 +5,7 @@ import CustomButton from "./components/ButtonComponenet";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center ">
+    <main className="flex min-h-screen bg-black items-center justify-center ">
       <div className="relative ">
         <Image
           className="animate-wobble hidden sm:block min-w-[300px] "

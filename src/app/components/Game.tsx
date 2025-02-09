@@ -130,8 +130,8 @@ const Game: React.FC = () => {
                   )
                   : (
                     <div className={`flex flex-row items-center gap-5 transition-opacity`}>
-                      <Image src="/PlayerX.png" alt="Player 2" width={69} height={61} />
-                      <Image src="/PlayerO.png" alt="Player 1" width={69} height={61} />
+                      <Image src="/PlayerX.svg" alt="Player 2" width={69} height={61} />
+                      <Image src="/PlayerO.svg" alt="Player 1" width={69} height={61} />
 
                     </div>
                   )}
@@ -142,7 +142,7 @@ const Game: React.FC = () => {
       <div className="flex flex-row justify-between w-auto gap-3 md:w-[290px]">
         <CustomButton onClick={handleUndo} iconSrc="/Undo.svg" className=" relative p-2" borderColor={"border-black"} ></CustomButton>
         <CustomButton onClick={resetGame} borderColor={"border-black"} textColor="text-black" className="relative p-2" >Restart</CustomButton>
-        <CustomButton onClick={resetScore} borderColor={"border-black"} textColor="text-black" className="relative p-2" >Reset Score</CustomButton>ss
+        <CustomButton onClick={resetScore} borderColor={"border-black"} textColor="text-black" className="relative p-2" >Reset Score</CustomButton>
       </div>
     </div >
   );

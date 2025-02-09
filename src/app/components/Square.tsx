@@ -29,14 +29,15 @@ import React, { useState } from "react";
 type SquareProps = {
    value: string;
    onClick: () => void;
+   isXNext: boolean;
 };
 
-const Square: React.FC<SquareProps> = ({ value, onClick }) => {
+const Square: React.FC<SquareProps> = ({ value, onClick, isXNext = true }) => {
    const [played, setPlayed] = useState(false);
-
+   console.log(value)
    return (
       <button
-         className="w-[100px] h-[100px] flex items-center justify-center border-2 border-black bg-white text-4xl hover:bg-gray-200 transition"
+         className={`w-[90px] h-[90px] md:w-[100px] md:h-[100px] flex items-center justify-center border-2 border-black bg-white text-4xl ${isXNext ? " hover:bg-[#ccfcd0]" : " hover:bg-[#c6f7fd]"}  transition`}
          onClick={() => {
             setPlayed(true);
             onClick();

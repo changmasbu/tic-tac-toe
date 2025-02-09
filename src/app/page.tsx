@@ -6,22 +6,23 @@ import CustomButton from "./components/ButtonComponenet";
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center ">
-      <div className="relative">
+      <div className="relative ">
         <Image
-          className="animate-wobble"
+          className="animate-wobble hidden sm:block min-w-[300px] "
           src="/tictactoe.svg"
           alt="Tic-Tac-Toe Image"
           width={711}
           height={144}
         />
-        <Link href="/game">
-          {/* <button className="mt-5 absolute right-[-60px] px-6 py-3 text-white bg-black border border-white transition-transform duration-400 hover:scale-125">
-            <span className="absolute inset-0 translate-x-1 translate-y-1 bg-black border border-white"></span>
-            <span className="font-sans relative">Let&apos;s play !!!</span>
-          </button> */}
-          <>
-            <CustomButton children={"Let's play !!!"} borderType={"double"} className="mt-5 absolute right-[-60px] px-6 py-3  " />
-          </>
+        <Image
+          className="animate-wobble block sm:hidden "
+          src="/tictactoe-mobile.svg"
+          alt="Tic-Tac-Toe Image"
+          width={182}
+          height={286}
+        />
+        <Link href="/game" className="flex justify-center lg:block ">
+          <CustomButton children={"Let's play !!!"} borderType={"double"} className="min-w-[150px]  mt-5 relative lg:absolute lg:right-[-60px] px-6 py-3 " />
         </Link>
       </div>
     </main >

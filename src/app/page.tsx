@@ -17,7 +17,7 @@ export default function Home() {
         <Link href="/game">
           <button className="mt-5 absolute right-[-60px] px-6 py-3 text-white bg-black border border-white transition-transform duration-400 hover:scale-125">
             <span className="absolute inset-0 translate-x-1 translate-y-1 bg-black border border-white"></span>
-            <span className="font-sans relative">Let's play !!!</span>
+            <span className="font-sans relative">Let&apos;s play !!!</span>
           </button>
         </Link>
       </div>

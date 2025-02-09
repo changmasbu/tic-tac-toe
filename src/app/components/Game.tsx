@@ -19,7 +19,7 @@ const Game: React.FC = () => {
       [0, 4, 8], [2, 4, 6] // Đường chéo
     ];
 
-    for (let line of lines) {
+    for (const line of lines) {
       const [a, b, c] = line;
       if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
         return squares[a];

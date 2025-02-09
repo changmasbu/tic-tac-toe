@@ -22,7 +22,7 @@ export default function Home() {
           height={286}
         />
         <Link href="/game" className="flex justify-center lg:block ">
-          <CustomButton borderType={"double"} className="min-w-[150px]  mt-5 relative lg:absolute lg:right-[-60px] px-6 py-3 " >"Let&apos;s play !!!"</CustomButton>
+          <CustomButton borderType={"double"} className="min-w-[150px]  mt-5 relative lg:absolute lg:right-[-60px] px-6 py-3 " >Let&apos;s play !!!</CustomButton>
         </Link>
       </div>
     </main >

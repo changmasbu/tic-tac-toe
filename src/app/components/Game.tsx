@@ -117,14 +117,14 @@ const Game: React.FC = () => {
               {winner === "X"
                 ? (
                   <div className={`flex flex-col items-center transition-opacity`}>
-                    <Image src="/PlayerX.png" alt="Player 2" width={69} height={61} />
+                    <Image src="/PlayerX.svg" alt="Player 2" width={69} height={61} />
                     <p className="text-lg font-sans text-black ">Player X</p>
                   </div>
                 )
                 : winner === "O"
                   ? (
                     <div className={`flex flex-col items-center transition-opacity`}>
-                      <Image src="/PlayerO.png" alt="Player 1" width={69} height={61} />
+                      <Image src="/PlayerO.svg" alt="Player 1" width={69} height={61} />
                       <p className="text-lg font-sans text-black ">Player O</p>
                     </div>
                   )

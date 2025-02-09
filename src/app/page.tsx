@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Game from "./components/Game";
 import Link from "next/link";
-import "./globals.css"; // Đảm bảo có file chứa CSS
+import "./globals.css";
 
 export default function Home() {
   return (
